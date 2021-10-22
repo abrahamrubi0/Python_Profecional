@@ -16,7 +16,8 @@
 #             self.num += 2
 #             return result
 #         else:
-#             raise StopIteration            
+#             raise StopIteration        
+#     
 import time
 
 class FiboIter():

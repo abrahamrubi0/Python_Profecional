@@ -54,27 +54,27 @@
 # saludo("Cesar")
 
 
-# def how_many(func):
-#     def wrapper(*args, **kwargs):
-#         func(*args, **kwargs)
-#         print("Y TENGO 18 Años")
-#     return wrapper    
+def how_many(func):
+    def wrapper(*args, **kwargs):
+        func(*args, **kwargs)
+        print("Y TENGO 18 Años")
+    return wrapper    
 
-# @how_many
-# def name():
-#     print('Hola me llamo abraham')
+@how_many
+def name():
+    print('Hola me llamo abraham')
 
-# name()
+name()
 
-# def format_lower(func) -> str:
-#     def wrapper(*args, **kwargs) -> str:
-#         return func(*args, **kwargs).lower()
-#     return wrapper
+def format_lower(func) -> str:
+    def wrapper(*args, **kwargs) -> str:
+        return func(*args, **kwargs).lower()
+    return wrapper
 
-# @format_lower 
-# def chat(text: str) -> str:
-#     assert type(text) == str, "SOLO ACEPTA TEXTO"
-#     return f"Este es el texto : {text}" 
+@format_lower 
+def chat(text: str) -> str:
+    assert type(text) == str, "SOLO ACEPTA TEXTO"
+    return f"Este es el texto : {text}" 
 
-# if __name__ == '__main__':
-#     print(chat("ASDASDDDDDDDDDDDDDDDDDDDDDDDDDD"))          
+if __name__ == '__main__':
+    print(chat("ASDASDDDDDDDDDDDDDDDDDDDDDDDDDD"))          

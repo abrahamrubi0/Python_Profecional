@@ -67,3 +67,4 @@ def run():
 if __name__ == '__main__':
     run()
 
+# Cuando tenemos un codigo "traducido" cuando tenemos azucar sintáctica
